@@ -1,6 +1,20 @@
 import React from "react";
 import { Table } from "react-bootsrap";
 
+var nodeList = [
+    {
+        title: "Go to the gym",
+        category: "Hobby",
+        content: "Leg day",
+        date: new Date("2020-06-06")
+    },
+    {
+        title: "Go to the gym",
+        category: "Hobby",
+        content: "Chest day",
+        date: new Date("2020-07-07")
+    }
+];
 const header = <h3>List of notes</h3>;
 
 function Notes() {
@@ -17,7 +31,7 @@ function Notes() {
                     </tr>
                 </thead>
                 <tbody>
-                    
+
                 </tbody>
             </Table>
         </div>
