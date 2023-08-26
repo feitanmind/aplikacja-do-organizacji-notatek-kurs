@@ -1,5 +1,6 @@
 import React from "react";
 import { Table } from "react-bootsrap";
+import Note from "./Note";
 
 var nodeList = [
     {
@@ -29,6 +30,12 @@ function Notes() {
                         <th>Content</th>
                         <th>Date</th>
                     </tr>
+                    <Note 
+                    title="Go shopping"
+                    category="To do"
+                    content="Buy some vegetables"
+                    date={new Date("2020-12-12")}
+                    />
                 </thead>
                 <tbody>
 
