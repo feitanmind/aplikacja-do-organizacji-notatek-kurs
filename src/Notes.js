@@ -1,5 +1,5 @@
 import React from "react";
-import { Table } from "react-bootsrap";
+import { Table } from "react-bootstrap"
 import Note from "./Note";
 
 var nodeList = [
