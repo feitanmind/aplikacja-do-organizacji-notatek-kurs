@@ -16,10 +16,10 @@ const Note = props => {
 };
 
 Note.propTypes = {
-    title: PropTypes.string,
-    category: PropTypes.string,
-    content: PropTypes.string,
-    date: PropTypes.instanceOf(Date),
+    title: PropTypes.string.isRequired,
+    category: PropTypes.string.isRequired,
+    content: PropTypes.string.isRequired,
+    date: PropTypes.instanceOf(Date).isRequired,
 };
 
 

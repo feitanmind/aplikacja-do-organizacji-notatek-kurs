@@ -30,7 +30,7 @@ function Notes() {
                         <th>Content</th>
                         <th>Date</th>
                     </tr>
-                    <Note date={new Date("2020-10-10")}/>
+                    <Note title={1} date={new Date("2020-10-10")}/>
                     <Note 
                     title="Go shopping"
                     category="To do"
