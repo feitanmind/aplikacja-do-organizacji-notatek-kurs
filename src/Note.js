@@ -26,5 +26,12 @@ Note.propTypes = {
     date: PropTypes.instanceOf(Date).isRequired,
 };
 
+Note.defaultProps = {
+    title: "NoteTitle",
+    category: "NoteCategory",
+    content: "NoteContent",
+    date: new Date()
+}
+
 
 export default Note;
