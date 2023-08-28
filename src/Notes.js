@@ -36,6 +36,17 @@ function Notes() {
                     content="Buy some vegetables"
                     date={new Date("2020-12-12")}
                     />
+
+                    {nodeList.map(note => {
+                        return(
+                            <Note
+                            title={note.title}
+                            category={note.category}
+                            content={note.content}
+                            date={note.date}
+                            />
+                        )
+                    })}
                 </thead>
                 <tbody>
 
