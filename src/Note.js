@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types"
 
 const Note = props => {
     return(
@@ -11,6 +12,15 @@ const Note = props => {
                 {props.date.getFullYear()}
             </td>
         </tr>
-    )
-}
+    );
+};
+
+Note.propTypes = {
+    title: PropTypes.string,
+    category: PropTypes.string,
+    content: PropTypes.string,
+    date: PropTypes.instanceOf(Date),
+};
+
+
 export default Note;
