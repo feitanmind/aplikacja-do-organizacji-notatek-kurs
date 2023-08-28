@@ -38,9 +38,10 @@ function Notes() {
                     date={new Date("2020-12-12")}
                     />
 
-                    {nodeList.map(note => {
+                    {nodeList.map((note,key) => {
                         return(
                             <Note
+                            key={key}
                             title={note.title}
                             category={note.category}
                             content={note.content}
