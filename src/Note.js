@@ -16,7 +16,11 @@ const Note = props => {
 };
 
 Note.propTypes = {
-    title: PropTypes.string.isRequired,
+    title(props, propName){
+        if(props[propName].length<3){
+            return new Error(propName+" was too short")
+        }
+    },
     category: PropTypes.string.isRequired,
     content: PropTypes.string.isRequired,
     date: PropTypes.instanceOf(Date).isRequired,
